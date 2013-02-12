@@ -3,7 +3,13 @@ var app = require('http').createServer(handler)
   , fs = require('fs')
   , url = require('url')
   , _ = require('underscore');
-
+  io.configure(function () { 
+		io.set('origins','http://localhost:8100');
+		io.set('transports', [
+			//'jsonp-polling'
+    		'websocket', 'htmlfile', 'xhr-polling', 'jsonp-polling'
+		]);
+  });
 app.listen(8099);
 
 function handler (req, res) {

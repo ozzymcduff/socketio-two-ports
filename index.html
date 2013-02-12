@@ -1,11 +1,5 @@
 <script src="http://localhost:8099/socket.io/socket.io.js"></script>
-<script>
-  var socket = io.connect('http://localhost:8099');
-  socket.on('news', function (data) {
-    console.log(data);
-    socket.emit('my other event', { my: 'data' });
-  });
-</script>
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
 </script>
 <script>
@@ -22,5 +16,16 @@ $(function(){
 		});
 	
 
+});
+</script>
+<script>
+$(function(){
+	console.log(3);
+  	var socket = io.connect('http://localhost:8099');
+  	socket.on('news', function (data) {
+  		console.log(4);
+    	console.log(data);
+    	socket.emit('my other event', { my: 'data' });
+  	});
 });
 </script>
