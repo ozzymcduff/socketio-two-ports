@@ -6,3 +6,16 @@
     socket.emit('my other event', { my: 'data' });
   });
 </script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+</script>
+<script>
+$(function(){
+	console.log(1);
+	$.ajax({
+  		url: "http://localhost:8099/pingjs",
+	    success: function( data ) {
+    		console.log(data)
+  		}
+	});
+});
+</script>
