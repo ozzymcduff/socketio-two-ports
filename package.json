@@ -1,0 +1,24 @@
+{
+  "name": "socket-io-two-ports",
+  "version": "1.0.0",
+  "description": "Node.js to try out socketio on two ports",
+  "main": "socket_server.js",
+  "dependencies": {
+    "socket.io": "^0.9.13",
+    "underscore": "^1.4.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wallymathieu/socketio-two-ports.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wallymathieu/socketio-two-ports/issues"
+  },
+  "homepage": "https://github.com/wallymathieu/socketio-two-ports"
+}
